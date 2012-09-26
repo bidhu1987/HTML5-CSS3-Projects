@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/css.css" />
+    <title>Canvas Tetris</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <script>
+        function init() {
+            var fileref = document.createElement("script");
+            fileref.setAttribute("type", "text/javascript");
+            fileref.setAttribute("src", "tatris.js");
+            document.body.appendChild(fileref);
+        }
+    </script>
+</head>
+<body onload="init()">
+    <h1 style='text-align: center; margin-bottom: 5px; font-family: Georgia;'>
+        Tetris</h1>
+    <br>
+        <div style="border: 1px solid #CCCCCC; height: 505px; margin-left:90px; width: 30%; float:left;">
+            <canvas id="game" style="border: 1px solid#ccc; float: left; margin: 15px;"> Your browser does not support the &lt;canvas&gt; element.<br>
+    Please use a normal browser. Hint: Safari, Chrome, Firefox. </canvas>
+            <!-- <div id ="level"> 0 </div>
+  </br>
+  score:
+  <div id="score"> 0 </div>
+  </br>
+  Next:-->
+            <table id="myTable" style="border: 1px solid#ccc; margin: 15px;">
+                <tbody>
+                    <tr>
+                        <label>
+                            level</label>
+                        <td id="level" style="border: 1px solid #CCCCCC; padding: 10px 12px;">
+                            0
+                        </td>
+                        &nbsp;&nbsp;
+                        <label>
+                            score</label><td id="score" style="border: 1px solid #CCCCCC; padding: 10px 12px;">
+                                0
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="border: 1px solid #CCCCCC; float: left; height: 18px; color: #444; width: 52px;">
+                Next</div>
+            <canvas id="hint" style="margin-top: 12px; width: 32%; height: 11%;"> </canvas>
+        </div>
+        <div style="float:left; margin-left:15px;">
+            <h4>
+                Details</h4>
+            <p>
+        1. Press '<b>s</b>' to start or stop</br>
+    </br> 2. Up arrow to rotate the object</br></br> 3. Down arrow to increase the speed</br></br>
+    4. Left or right arrow to move left and right</br></br> </p> </div>
+</body>
+</html>
